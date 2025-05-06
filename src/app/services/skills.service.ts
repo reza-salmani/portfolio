@@ -47,5 +47,6 @@ export const SkillItems = {
     "Postman",
     "Altair",
     "Office",
+    "Intermediate In English",
   ],
 };

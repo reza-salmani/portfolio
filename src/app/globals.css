@@ -53,3 +53,20 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+.fade-in-out-by-scroll {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-duration: 2000ms;
+  animation-name: fadeIn;
+  animation-range: entry 0% cover 100%;
+  animation-timeline: view(); /* <-- the magic */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

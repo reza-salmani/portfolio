@@ -9,6 +9,7 @@ import MainSection from "./MainSection";
 import { gsap } from "gsap";
 import Projects from "./projects";
 import Skills from "./skills";
+import scrollIntoView from "scroll-into-view";
 export default function Home() {
   const [t, setT] = useState<Record<string, string>>({});
   const [lang, setLang] = useState("en");
@@ -32,7 +33,13 @@ export default function Home() {
     });
   };
   const handleScroller = (target: any) => {
-    document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
+    scrollIntoView(document.getElementById(target)!, {
+      time: 2000, // duration in ms
+      align: { top: 0.1 }, // optional alignment
+      ease: function (t) {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // easeInOutQuad
+      },
+    });
   };
   const handleMouseLeave = (event: any) => {
     gsap.to(event.target, {
@@ -75,13 +82,19 @@ export default function Home() {
         <div id="main_Id">
           <MainSection t={t}></MainSection>
         </div>
-        <div className="my-20 w-[70%] m-auto" id="project_Id">
+        <div
+          className="my-20 w-[70%] m-auto fade-in-out-by-scroll"
+          id="project_Id"
+        >
           <Projects props={{ t }}></Projects>
         </div>
-        <div className="my-20 w-[70%] m-auto" id="skills_Id">
+        <div
+          className="my-20 w-[70%] m-auto fade-in-out-by-scroll "
+          id="skills_Id"
+        >
           <Skills props={{ t }}></Skills>
         </div>
-        <div id="contact_Id" className="py-20"></div>
+        <div id="contact_Id" className="py-20 fade-in-out-by-scroll "></div>
       </div>
     </div>
   );

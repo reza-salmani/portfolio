@@ -1,0 +1,18 @@
+{
+  "EN": "En",
+  "FA": "Fa",
+  "Writer": "R.S",
+  "WelcomeMessage": "Hi, I am Reza Salmani.",
+  "JobField": "A FrontEnd Developer",
+  "Skills": "Skills",
+  "Projects": "Projects",
+  "Contact": "Contact",
+  "resume": "resume",
+  "description": "With +5 Years Exprerience In Javascript Framework / Library like [Angular, React , Vue]",
+  "MultiLanguageAngularProject": "Multi Language Angular Project",
+  "withRestfullOidcTailwind": "With Restfull Api , Oidc for Authentication and Tailwind for styling",
+  "More": "more...",
+  "BackEnd": "BackEnd",
+  "FrontEnd": "FrontEnd",
+  "Talents": "Talents"
+}

@@ -31,15 +31,8 @@ export default function Home() {
       ease: "power2.out",
     });
   };
-  const handleScroller = () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: 300, // 👈 this must be a number (not element)
-      ease: "power2.inOut",
-      onUpdate: () => {
-        window.scrollTo({ top: window.scrollY }); // keeps browser happy
-      },
-    });
+  const handleScroller = (target: any) => {
+    document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
   };
   const handleMouseLeave = (event: any) => {
     gsap.to(event.target, {
@@ -67,7 +60,7 @@ export default function Home() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     key={menu.id}
-                    onClick={handleScroller}
+                    onClick={() => handleScroller(menu.route)}
                     className="mx-4 relative border-b-2 border-transparent"
                   >
                     {t[menu.name]}

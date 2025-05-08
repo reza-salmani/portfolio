@@ -1,34 +1,42 @@
 export const ProjectItems: IProject[] = [
   {
-    name: "MultiLanguageAngularProject",
-    title: "ArisCorp",
-    color: "yellow",
-    footer: "withRestfullOidcTailwind",
-    images: [],
-    videos: ["/files/single_language_angular_video.mp4"],
+    name: "Portfolio",
+    footer: "withNextjsGsap",
+    video: "",
+    image: "/files/portfolio.png",
+    isPrivate: false,
+    link: "https://github.com/reza-salmani/portfolio",
   },
   {
-    name: "MultiLanguageAngularProject_1",
-    title: "ArisCorp",
-    color: "yellow",
+    name: "SingleLanguageERP",
     footer: "withRestfullOidcTailwind",
-    images: [],
-    videos: ["/files/multi_language_angular_video.mp4"],
+    video: "/files/single_language_angular_video.mp4",
+    image: "",
+    isPrivate: true,
+    link: "https://github.com/reza-salmani/frontend_single_language",
   },
   {
-    name: "MultiLanguageAngularProject_2",
-    title: "ArisCorp",
-    color: "yellow",
+    name: "MultiLanguageERP",
     footer: "withRestfullOidcTailwind",
-    images: [],
-    videos: ["/files/multi_language_angular_video.mp4"],
+    video: "/files/multi_language_angular_video.mp4",
+    image: "",
+    isPrivate: true,
+    link: "https://github.com/reza-salmani/ArisERP",
+  },
+  {
+    name: "HROrganization",
+    footer: "withRestfullJWTTailwind",
+    video: "/files/vue_organization.mp4",
+    image: "",
+    isPrivate: true,
+    link: "https://github.com/reza-salmani/organization",
   },
 ];
 interface IProject {
   name: string;
-  images: string[];
-  videos: string[];
-  title: string;
+  video?: string;
   footer: string;
-  color: string;
+  link: string;
+  image?: string;
+  isPrivate: boolean;
 }

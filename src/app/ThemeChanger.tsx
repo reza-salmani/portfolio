@@ -7,7 +7,9 @@ const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
   const [isDark, setIsDark] = useState(false);
   useEffect(() => {
-    setIsDark(theme === "dark");
+    if (typeof window !== "undefined") {
+      setIsDark(theme === "dark");
+    }
   }, [theme]);
   return (
     <button

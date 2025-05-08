@@ -10,6 +10,7 @@ import { gsap } from "gsap";
 import Projects from "./projects";
 import Skills from "./skills";
 import scrollIntoView from "scroll-into-view";
+import { Contact } from "./contact";
 export default function Home() {
   const [t, setT] = useState<Record<string, string>>({});
   const [lang, setLang] = useState("en");
@@ -34,7 +35,7 @@ export default function Home() {
   };
   const handleScroller = (target: any) => {
     scrollIntoView(document.getElementById(target)!, {
-      time: 2000, // duration in ms
+      time: 3000, // duration in ms
       align: { top: 0.1 }, // optional alignment
       ease: function (t) {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // easeInOutQuad
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </div>
         <div id="main_Id">
-          <MainSection t={t}></MainSection>
+          <MainSection props={{ t }}></MainSection>
         </div>
         <div
           className="my-20 w-[70%] m-auto fade-in-out-by-scroll"
@@ -94,7 +95,9 @@ export default function Home() {
         >
           <Skills props={{ t }}></Skills>
         </div>
-        <div id="contact_Id" className="py-20 fade-in-out-by-scroll "></div>
+        <div id="contact_Id" className="pb-20 w-[70%] m-auto">
+          <Contact props={{ t }}></Contact>
+        </div>
       </div>
     </div>
   );

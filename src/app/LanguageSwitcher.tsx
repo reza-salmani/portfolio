@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import {
   getDirection,
@@ -12,6 +13,7 @@ const LanguageSwitcher = () => {
     const locale = getUserLocale();
     setLang(locale);
     document.documentElement.dir = getDirection();
+    document.documentElement.lang = locale;
   }, []);
 
   const switchLang = () => {

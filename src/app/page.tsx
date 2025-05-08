@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { getDictionary } from "./getDictionary";
-import { getUserLocale } from "./language";
+import { getDictionary } from "./services/dictionary.service";
+import { getUserLocale } from "./services/language.service";
 import ThemeChanger from "./ThemeChanger";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { menus } from "./services/menu.service";

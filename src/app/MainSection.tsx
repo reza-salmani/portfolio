@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { getDirection } from "./language";
+import { getDirection } from "./services/language.service";
 export default function MainSection({
   props,
 }: Readonly<{ props: { t: any } }>) {
@@ -41,7 +41,10 @@ export default function MainSection({
         <h2 className="text-3xl font-bold">{props.t["JobField"]}</h2>
       </div>
       <div className="w-[45%] m-auto flex justify-center text-sky-900 dark:text-sky-100 mt-20">
-        <p className=" text-center">{props.t["description"]}</p>
+        <p className=" text-center">{props.t["description_1"]}</p>
+      </div>
+      <div className="w-[45%] m-auto flex justify-center text-sky-900 dark:text-sky-100">
+        <p className=" text-center">{props.t["description_2"]}</p>
       </div>
       <div className="w-[45%] m-auto flex justify-center text-sky-100 mt-20">
         <a

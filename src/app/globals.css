@@ -58,7 +58,7 @@ body {
   animation-fill-mode: both;
   animation-duration: 2000ms;
   animation-name: fadeIn;
-  animation-range: entry 0% cover 100%;
+  animation-range: entry 0% cover 150%;
   animation-timeline: view(); /* <-- the magic */
 }
 
@@ -75,13 +75,13 @@ body {
 }
 .mask-gradient {
   mask-image: radial-gradient(
-    circle at center,
-    rgba(0, 0, 0, 1) 30%,
-    rgba(0, 0, 0, 0) 70%
+    closest-side,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
   );
   -webkit-mask-image: radial-gradient(
-    circle at center,
-    rgba(0, 0, 0, 1) 30%,
-    rgba(0, 0, 0, 0) 70%
+    closest-side,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
   );
 }

@@ -1,0 +1,35 @@
+{
+  "FrontEnd": [
+    "JavaScript",
+    "TypeScript",
+    "Micro FrontEnd",
+    "Angular",
+    "AngularJs",
+    "ReactJs",
+    "NextJs",
+    "VueJs",
+    "Nuxt",
+    "Client Graphql",
+    "Tailwind",
+    "Css",
+    "UI Libraries",
+    "Material",
+    "Zastand",
+    "Zod",
+    "SSR",
+    "CSR"
+  ],
+  "Talents": [
+    "Sonar Qube Analizer",
+    "Docker",
+    "Github",
+    "GitLab",
+    "Light Housing",
+    "Vscode",
+    "Webstorm",
+    "Postman",
+    "Altair",
+    "Office",
+    "Level C1 In English"
+  ]
+}

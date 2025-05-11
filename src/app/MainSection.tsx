@@ -34,26 +34,30 @@ export default function MainSection({
 
   return (
     <div className="relative">
-      <div className="absolute left-20 rtl:right-20 ">
+      <div className="lg:absolute flex justify-center left-20 rtl:right-20 ">
         <img
-          className="h-[25rem] shadow shadow-blue-500 w-[25rem] mask-gradient object-cover "
+          className="lg:h-[25rem] h-[10rem] shadow shadow-blue-500 lg:w-[25rem] w-[10rem] mask-gradient object-cover "
           alt="profile"
           src={isRtl ? "./files/reza.jpg" : "./files/reza_l.jpg"}
         />
       </div>
-      <div className="w-[70%] m-auto flex justify-center text-sky-500 mt-10">
-        <h1 className="text-5xl font-bold">{props.t["WelcomeMessage"]}</h1>
+      <div className="w-[70%] m-auto flex justify-center text-sky-500 lg:mt-10 mt-5">
+        <h1 className="text-5xl text-center font-bold">
+          {props.t["WelcomeMessage"]}
+        </h1>
       </div>
       <div className="w-[70%] m-auto flex justify-center text-sky-700 mt-20">
-        <h2 className="text-3xl font-bold">{props.t["JobField"]}</h2>
+        <h2 className="text-3xl text-center font-bold">
+          {props.t["JobField"]}
+        </h2>
       </div>
-      <div className="w-[45%] m-auto flex justify-center text-sky-900 dark:text-sky-100 mt-20">
+      <div className="w-[70%] m-auto flex justify-center text-sky-900 dark:text-sky-100 mt-20">
         <p className=" text-center">{props.t["description_1"]}</p>
       </div>
-      <div className="w-[45%] m-auto flex justify-center text-sky-900 dark:text-sky-100">
+      <div className="w-[70%] m-auto flex justify-center text-sky-900 dark:text-sky-100">
         <p className=" text-center">{props.t["description_2"]}</p>
       </div>
-      <div className="w-[45%] m-auto flex justify-center text-sky-100 mt-20">
+      <div className="w-[70%] m-auto flex justify-center text-sky-100 mt-20">
         <a
           href="/files/resume.pdf"
           target="_blank"

@@ -1,6 +1,14 @@
-import { ProjectItems } from "../services/project.service";
+"use client";
+
+import { useState, useEffect } from "react";
 
 export default function Projects({ props }: Readonly<{ props: { t: any } }>) {
+  const [data, setData] = useState<any>();
+  useEffect(() => {
+    fetch("/services/projects.json")
+      .then((res) => res.json())
+      .then((e) => setData(e));
+  }, []);
   return (
     <>
       <div className="border-b-2 my-4 pb-2 flex justify-between border-sky-800">
@@ -9,7 +17,7 @@ export default function Projects({ props }: Readonly<{ props: { t: any } }>) {
         </span>
       </div>
       <div className="flex flex-wrap justify-start  gap-4 ">
-        {ProjectItems.map((project, index) => {
+        {data?.map((project: any, index: any) => {
           return (
             <div
               key={project.name}

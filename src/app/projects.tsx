@@ -3,7 +3,7 @@ import { ProjectItems } from "./services/project.service";
 export default function Projects({ props }: Readonly<{ props: { t: any } }>) {
   return (
     <>
-      <div className="border-b-2 my-4 pb-2 flex justify-between border-sky-200 dark:border-sky-800">
+      <div className="border-b-2 my-4 pb-2 flex justify-between border-sky-800">
         <span className="text-sky-500 font-bold text-2xl">
           {props.t["Projects"]}
         </span>
@@ -35,7 +35,7 @@ export default function Projects({ props }: Readonly<{ props: { t: any } }>) {
               </div>
               <p
                 className={
-                  "w-full rounded-lg text-gray-100 mt-2 text-center text-sm"
+                  "w-full rounded-lg text-gray-800 dark:text-gray-200 mt-2 text-center text-sm"
                 }
               >
                 <span>{props.t[project.footer]}</span>

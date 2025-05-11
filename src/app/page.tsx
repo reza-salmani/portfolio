@@ -14,7 +14,8 @@ import { Contact } from "./contact";
 export default function Home() {
   const [t, setT] = useState<Record<string, string>>({});
   const [lang, setLang] = useState("en");
-  const bodyRef = useRef(null);
+  const [showBtn, setShowBtn] = useState(false);
+  const bodyRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const locale = getUserLocale();
     setLang(locale);
@@ -49,13 +50,24 @@ export default function Home() {
       ease: "power2.in",
     });
   };
+
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const target = e.currentTarget;
+    setShowBtn(target.scrollTop > 300);
+  };
+
+  const scrollToTop = () => {
+    bodyRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+  };
   if (!lang) return null;
+
   return (
     <div
       ref={bodyRef}
-      className="bg-gray-100 dark:bg-gray-900 h-[100vh] overflow-y-auto w-[100vw] p-4 py-20 text-gray-800 dark:text-gray-400"
+      onScroll={handleScroll}
+      className="bg-gray-300 dark:bg-gray-900 h-[100vh] overflow-y-auto w-[100vw] p-4 py-20 text-gray-800 dark:text-gray-400"
     >
-      <div className="w-[100%] m-auto h-full ">
+      <div className="w-[100%] m-auto h-full">
         <div className="flex justify-around">
           <div>
             <h1 className="text-blue-500 text-2xl font-bold">{t.Writer}</h1>
@@ -98,6 +110,14 @@ export default function Home() {
         <div id="contact_Id" className="pb-20 w-[70%] m-auto">
           <Contact props={{ t }}></Contact>
         </div>
+        {showBtn && (
+          <button
+            onClick={scrollToTop}
+            className="sticky  animate-bounce bottom-6 right-6 opacity-80 cursor-pointer  bg-sky-800 dark:bg-sky-400 w-[3rem] h-[3rem] text-white rounded-full"
+          >
+            ↑
+          </button>
+        )}
       </div>
     </div>
   );

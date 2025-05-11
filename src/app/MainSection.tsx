@@ -33,7 +33,14 @@ export default function MainSection({
   };
 
   return (
-    <div>
+    <div className="relative">
+      <div className="absolute left-20 rtl:right-20 ">
+        <img
+          className="h-[25rem] shadow shadow-blue-500 w-[25rem] mask-gradient object-cover "
+          alt="profile"
+          src={isRtl ? "./files/reza.jpg" : "./files/reza_l.jpg"}
+        />
+      </div>
       <div className="w-[70%] m-auto flex justify-center text-sky-500 mt-10">
         <h1 className="text-5xl font-bold">{props.t["WelcomeMessage"]}</h1>
       </div>

@@ -3,7 +3,7 @@ export const Contact = ({ props }: Readonly<{ props: { t: any } }>) => {
   const showMailingFormModal = () => {};
   return (
     <>
-      <div className="border-b-2 pb-2 flex justify-center border-sky-200 dark:border-sky-800">
+      <div className="border-b-2 pb-2 flex justify-center border-sky-800">
         <span className="text-sky-500 font-bold text-2xl">
           {props.t["Contact"]}
         </span>

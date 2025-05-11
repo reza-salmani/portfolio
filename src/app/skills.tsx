@@ -4,7 +4,7 @@ import { SkillItems } from "./services/skills.service";
 export default function Skills({ props }: Readonly<{ props: { t: any } }>) {
   return (
     <>
-      <div className="border-b-2 my-4 pb-2 flex justify-between border-sky-200 dark:border-sky-800">
+      <div className="border-b-2 my-4 pb-2 flex justify-between border-sky-800">
         <span className="text-sky-500 font-bold text-2xl">
           {props.t["Skills"]}
         </span>

@@ -9,11 +9,11 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "next test",
     "eject": "next eject"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.506.0",
     "next": "15.3.1",
@@ -30,7 +30,6 @@
     "@types/react-dom": "^19",
     "@types/react-scroll": "^1.8.10",
     "@types/scroll-into-view": "^1.16.4",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { getDirection } from "./services/language.service";
+import { getDirection } from "../services/language.service";
 export default function MainSection({
   props,
 }: Readonly<{ props: { t: any } }>) {

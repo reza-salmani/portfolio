@@ -1,4 +1,4 @@
-import { ProjectItems } from "./services/project.service";
+import { ProjectItems } from "../services/project.service";
 
 export default function Projects({ props }: Readonly<{ props: { t: any } }>) {
   return (

@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { getDictionary } from "./services/dictionary.service";
-import { getUserLocale } from "./services/language.service";
+import { getDictionary } from "../services/dictionary.service";
+import { getUserLocale } from "../services/language.service";
 import ThemeChanger from "./ThemeChanger";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { menus } from "./services/menu.service";
+import { menus } from "../services/menu.service";
 import MainSection from "./MainSection";
 import { gsap } from "gsap";
 import Projects from "./projects";

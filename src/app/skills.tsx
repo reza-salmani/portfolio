@@ -1,5 +1,5 @@
 "use client";
-import { SkillItems } from "./services/skills.service";
+import { SkillItems } from "../services/skills.service";
 
 export default function Skills({ props }: Readonly<{ props: { t: any } }>) {
   return (

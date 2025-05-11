@@ -5,7 +5,7 @@ import {
   getUserLocale,
   setDirection,
   setUserLocale,
-} from "./services/language.service";
+} from "../services/language.service";
 
 const LanguageSwitcher = () => {
   const [lang, setLang] = useState("en");

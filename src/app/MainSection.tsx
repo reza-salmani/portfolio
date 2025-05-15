@@ -34,7 +34,7 @@ export default function MainSection({
 
   return (
     <div className="relative">
-      <div className="lg:absolute flex justify-center left-20 rtl:right-20 ">
+      <div className="lg:absolute flex justify-center start-20 ">
         <img
           className="lg:h-[25rem] h-[10rem] shadow shadow-blue-500 lg:w-[25rem] w-[10rem] mask-gradient object-cover "
           alt="profile"

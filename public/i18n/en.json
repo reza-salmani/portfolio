@@ -21,5 +21,8 @@
   "withNextjsGsap": "with Nextjs & Gsap",
   "Portfolio": "Portfolio",
   "HROrganization": "HR Organization",
-  "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind"
+  "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind",
+  "MicroFrontEnd": "Micro FrontEnd ERP",
+  "Traffice": "Time Attendance",
+  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap"
 }

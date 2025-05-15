@@ -21,5 +21,8 @@
   "withNextjsGsap": "Nextjs & Gsap با استفاده از ",
   "Portfolio": "نمونه کارها",
   "HROrganization": "تشکیلات",
-  "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind"
+  "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind",
+  "MicroFrontEnd": "پروژه ERP مایکروفرانت اند",
+  "Traffice": "پروژه تردد",
+  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap"
 }

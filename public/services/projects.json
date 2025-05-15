@@ -30,5 +30,21 @@
     "image": "",
     "isPrivate": true,
     "link": "https://github.com/reza-salmani/organization"
+  },
+  {
+    "name": "MicroFrontEnd",
+    "footer": "withRestfullOidcTailwind",
+    "video": "/files/microfrontend.mp4",
+    "image": "",
+    "isPrivate": true,
+    "link": "https://github.com/reza-salmani/MicroFrontEnd"
+  },
+  {
+    "name": "Traffice",
+    "footer": "withRestfullOidcBootstrap",
+    "video": "/files/traffic.mp4",
+    "image": "",
+    "isPrivate": true,
+    "link": "https://github.com/reza-salmani/traffic_ui"
   }
 ]

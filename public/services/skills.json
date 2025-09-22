@@ -1,5 +1,7 @@
 {
-  "FrontEnd": [
+  "FullStack": [
+    "Nodejs",
+    "NestJs",
     "JavaScript",
     "TypeScript",
     "Micro FrontEnd",

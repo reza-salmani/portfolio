@@ -16,10 +16,10 @@ export default function Skills({ props }: Readonly<{ props: { t: any } }>) {
       </div>
 
       <div className="ml-2 my-2 rtl:mr-2 dark:text-sky-200 text-sky-900 text-lg">
-        {props.t["FrontEnd"]} :
+        {props.t["FullStack"]} :
       </div>
       <div className="flex ml-4 rtl:mr-4 justify-start  flex-wrap">
-        {data?.FrontEnd.map((fe: any) => (
+        {data?.FullStack.map((fe: any) => (
           <div
             className="bg-gray-200 dark:bg-gray-950 m-2 hover:scale-110 transition-all duration-300 cursor-pointer font-light rounded-lg p-2 dark:text-amber-300 text-amber-900"
             key={fe}

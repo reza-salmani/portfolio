@@ -2,8 +2,8 @@ export const ProjectItems: IProject[] = [
   {
     name: "FullStackCryptoCurrency",
     footer: "NestJsWithAngular",
-    video: "",
-    image: "/files/crypto-currency.mp4",
+    video: "/files/crypto-currency.mp4",
+    image: "",
     isPrivate: true,
     link: "https://github.com/reza-salmani/crypto-currency",
   },

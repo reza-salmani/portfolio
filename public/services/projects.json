@@ -1,5 +1,13 @@
 [
   {
+    "name": "FullStackCryptoCurrency",
+    "footer": "NestJsWithAngular",
+    "video": "/files/crypto-currency.mp4",
+    "image": "",
+    "isPrivate": true,
+    "link": "https://github.com/reza-salmani/crypto-currency"
+  },
+  {
     "name": "Portfolio",
     "footer": "withNextjsGsap",
     "video": "",

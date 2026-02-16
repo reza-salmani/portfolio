@@ -25,5 +25,7 @@
   "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind",
   "MicroFrontEnd": "Micro FrontEnd ERP",
   "Traffice": "Time Attendance",
-  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap"
+  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap",
+  "NestJsWithAngular":"NestJs, GraphQL, Customized JWT,Signal Based Angular 21,Tailwind",
+  "FullStackCryptoCurrency":"Full-Stack Crypto-Currency"
 }

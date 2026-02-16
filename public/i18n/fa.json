@@ -25,5 +25,7 @@
   "withRestfullJWTTailwind": "Vue, Restfull, JWT, Tailwind",
   "MicroFrontEnd": "پروژه ERP مایکروفرانت اند",
   "Traffice": "پروژه تردد",
-  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap"
+  "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap",
+  "NestJsWithAngular":"NestJs, GraphQL, Customized JWT,Signal Based Angular 21,Tailwind",
+  "FullStackCryptoCurrency":"پروژه معاملاتی رمزارز فول استک"
 }

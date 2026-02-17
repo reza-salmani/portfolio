@@ -26,6 +26,10 @@
   "MicroFrontEnd": "Micro FrontEnd ERP",
   "Traffice": "Time Attendance",
   "withRestfullOidcBootstrap": "AngularJs, Restfull Api, Oidc, bootstrap",
-  "NestJsWithAngular":"NestJs, GraphQL, Customized JWT,Signal Based Angular 21,Tailwind",
-  "FullStackCryptoCurrency":"Full-Stack Crypto-Currency"
+  "NestJsWithAngular": "NestJs, GraphQL, Customized JWT,Signal Based Angular 21,Tailwind",
+  "FullStackCryptoCurrency": "Full-Stack Crypto-Currency",
+  "NestJsWithKafkaAndAngular": "NestJs With Kafka and Angular",
+  "MicroServices": "NestJs Micro Services",
+  "ProjectManagement": "Project Management",
+  "NestJsWithNext": "NestJs, GraphQL With React NextJs"
 }

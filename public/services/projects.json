@@ -1,5 +1,21 @@
 [
   {
+    "name": "MicroServices",
+    "footer": "NestJsWithKafkaAndAngular",
+    "video": "/files/micro-services.mp4",
+    "image": "",
+    "isPrivate": true,
+    "link": "https://github.com/reza-salmani/services"
+  },
+  {
+    "name": "ProjectManagement",
+    "footer": "NestJsWithNext",
+    "video": "/files/project-management.mp4",
+    "image": "",
+    "isPrivate": true,
+    "link": "https://github.com/reza-salmani/ProjectManagement"
+  },
+  {
     "name": "FullStackCryptoCurrency",
     "footer": "NestJsWithAngular",
     "video": "/files/crypto-currency.mp4",
